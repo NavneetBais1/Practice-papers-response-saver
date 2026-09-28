@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PracticePaper Progress Saver",
+  "version": "1.0",
+  "description": "Automatically saves and restores your selected answers on PracticePaper.in",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.practicepaper.in/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
